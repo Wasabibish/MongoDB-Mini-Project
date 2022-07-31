@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>397</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Projet BDA</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(63, 62, 66);
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;MS Shell Dlg 2&quot;;
+color :rgb(232, 231, 213);
+background-color: transparent; 
+border-color: rgb(63, 160, 55);</string>
+    </property>
+    <property name="text">
+     <string>Projet BDA : MongoDB</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 190, 188);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!pressed{
+background-color: rgb(63, 160, 55);
+border-radius : 10px;
+border: 2px solid rgb(63, 160, 55);
+}
+
+QPushButton:hover:!pressed
+{
+  border: 2px solid rgb(77, 179, 61);
+
+}
+QPushButton:pressed
+{
+background-color: rgb(63, 160, 55);
+border-radius : 10px;
+border: 2px solid rgb(63, 160, 55);
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>160</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(63, 160, 55);
+border-radius : 10px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Choisir votre question</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Question8</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(63, 160, 55);
+border-radius : 10px;
+border: 2px solid rgb(63, 160, 55);
+
+color : rgb(193, 190, 188);</string>
+    </property>
+    <property name="plainText">
+     <string>Votre question sera affichee ici..</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>181</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(63, 160, 55);
+border-radius : 10px;
+border: 2px solid rgb(63, 160, 55);
+
+color : rgb(193, 190, 188);</string>
+    </property>
+    <property name="plainText">
+     <string>Votre reponse sera affichee ici..</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>-40</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(63, 160, 55);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>250</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(63, 160, 55);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(232, 231, 213);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(63, 160, 55);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(232, 231, 213);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_7">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(232, 231, 213);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_8">
+    <property name="geometry">
+     <rect>
+      <x>-60</x>
+      <y>130</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius : 40px;
+border: 2px solid rgb(63, 160, 55);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color :rgb(232, 231, 213);
+background-color: transparent; 
+border-color: rgb(63, 160, 55);</string>
+    </property>
+    <property name="text">
+     <string>DJEGHALI et MOUSSI</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
